@@ -1,3 +1,4 @@
+import { SwapiService } from './../../services/swapi.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarshipsPage implements OnInit {
 
-  constructor() { }
+  starships: any;
+  iconname = 'airplane-outline'
+
+  constructor(private swapiService: SwapiService) { }
 
   ngOnInit() {
+    this.swapiService.getSwapi('starships').subscribe(data => {
+      this.starships = data;
+      console.log(data);
+    });
   }
 
 }

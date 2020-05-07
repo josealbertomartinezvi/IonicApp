@@ -1,3 +1,4 @@
+import { ComponetsModule } from './../../componets/componets.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { StarshipsPage } from './starships.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    StarshipsPageRoutingModule
+    StarshipsPageRoutingModule,
+    ComponetsModule
   ],
   declarations: [StarshipsPage]
 })
