@@ -1,47 +1,47 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs/planets"></ion-back-button>
+      <ion-back-button defaultHref="tabs/starships"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ planet.name }}</ion-title>
+    <ion-title>{{ starships.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   <ion-card>
     <ion-item>
-      <ion-icon name="planet"></ion-icon>
-      <ion-label>{{ planet.terrain }}</ion-label>
+      <ion-icon name="airplane-outline"></ion-icon>
+      <ion-label>{{ starships.model }}</ion-label>
     </ion-item>
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col>
-            <p>Population: </p>
-            <p> {{ planet.population }} </p>
+            <p>MGLT: </p>
+            <p> {{ starships.MGLT }} </p>
           </ion-col>
           <ion-col>
-            <p>Diameter: </p>
-            <p> {{ planet.diameter }} </p>
+            <p>Cargo Capacity: </p>
+            <p> {{ starships.cargo_capacity }} </p>
           </ion-col>
           <ion-col>
-            <p>Gravity: </p>
-            <p> {{ planet.gravity }} </p>
+            <p>Cost in Credits: </p>
+            <p> {{ starships.cost_in_credits }} </p>
           </ion-col>
           <ion-item-divider></ion-item-divider>
         </ion-row>
         <ion-row>
           <ion-col>
-            <p>Rotation Period: </p>
-            <p> {{ planet.rotation_period }} </p>
+            <p>Length: </p>
+            <p> {{ starships.length }} </p>
           </ion-col>
           <ion-col>
-            <p>Orbital Period: </p>
-            <p> {{ planet.orbital_period }} </p>
+            <p>Manufacturer: </p>
+            <p> {{ starships.manufacturer }} </p>
           </ion-col>
           <ion-col>
-            <p>Surface Water: </p>
-            <p> {{ planet.surface_water }} </p>
+            <p>Passengers: </p>
+            <p> {{ starships.passengers }} </p>
           </ion-col>
           <ion-item-divider></ion-item-divider>
         </ion-row>
