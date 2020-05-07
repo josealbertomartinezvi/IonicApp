@@ -1,3 +1,4 @@
+import { SwapiService } from './../../services/swapi.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeoplePage implements OnInit {
 
-  constructor() { }
+  people: any;
+  iconname = 'people'
+
+  constructor(private swapiService:SwapiService) { }
 
   ngOnInit() {
+    this.swapiService.getSwapi('people').subscribe(data => {
+      this.people = data;
+      console.log(data);
+    });
   }
 
 }

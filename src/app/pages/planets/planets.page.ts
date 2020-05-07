@@ -9,6 +9,7 @@ import { SwapiService } from '../../services/swapi.service';
 export class PlanetsPage implements OnInit {
 
   planets: any;
+  iconname = 'planet-outline';
 
   constructor(private swapiService: SwapiService) { }
 
