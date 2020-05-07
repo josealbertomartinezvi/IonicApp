@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ planet.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="planet"></ion-icon>
+      <ion-label>{{ planet.terrain }}</ion-label>
+    </ion-item>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>Population: </p>
+            <p> {{ planet.population }} </p>
+          </ion-col>
+          <ion-col>
+            <p>Diameter: </p>
+            <p> {{ planet.diameter }} </p>
+          </ion-col>
+          <ion-col>
+            <p>Gravity: </p>
+            <p> {{ planet.gravity }} </p>
+          </ion-col>
+          <ion-item-divider></ion-item-divider>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>Rotation Period: </p>
+            <p> {{ planet.rotation_period }} </p>
+          </ion-col>
+          <ion-col>
+            <p>Orbital Period: </p>
+            <p> {{ planet.orbital_period }} </p>
+          </ion-col>
+          <ion-col>
+            <p>Surface Water: </p>
+            <p> {{ planet.surface_water }} </p>
+          </ion-col>
+          <ion-item-divider></ion-item-divider>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
